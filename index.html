@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: 'Lobster',cursive;
+            text-align: center;
+            background-image: url('bg.jpg'); /* Specify the path to your background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e83e8c;
+        }
+        p {
+            color: #343a40;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .valentine-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #e83e8c;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #d92573;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <audio id="bgMusic" controls loop autoplay>
+            <source src="bg_music.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <h1>Will You Be My Valentine?</h1>
+        <img src="pic1.jpg" alt="Valentine's Day" class="valentine-img">
+        <p>My dearest Evichka &#x1F633;,</p>
+        <p>On this special day, I want to express my love for you. You mean the world to me, and I can't imagine my life without you by my side. Your smile brightens up my day, and your love fills my heart with joy.</p>
+        <p>Will you make me the happiest person and be my Valentine?</p>
+        <button id="yesBtn" class="btn">Yes, I will! &#x1F633</button>
+    </div>
+
+    <script>
+        document.getElementById("yesBtn").addEventListener("click", function() {
+            window.location.href = "yespage.html";
+        });
+    </script>
+    <script>
+        var audio = document.getElementById("bgMusic");
+        audio.volume = 0.2;
+      </script>
+</body>
+</html>
